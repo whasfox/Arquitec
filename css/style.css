@@ -1,0 +1,164 @@
+body{
+	font-family: Helvetica Neue;
+	font-size: 15px;
+	color: #444;
+	font-weight: 300;
+}
+header{
+	position: absolute;
+	background-color: rgba(0,0,0,0.65);
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	padding: 20px 15px;
+	width: 100%;
+}
+header h1{
+	font-size: 18px;
+}
+#hero {
+	
+	background-image: url("../img/v9-slide-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+	padding: 14% 0;
+	text-align: center;
+}
+#hero h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 4px;
+	margin-bottom: 40px;
+}
+#hero h3{
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 30px
+}
+
+#hero .btn-dark{
+	background-color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 15px 30px;
+	border-radius: 0;
+	border: 0;
+	margin-right: 20px;
+	letter-spacing: 2px;
+}
+#hero .btn-dark:hover,
+#hero .btn-active{
+	background-color: #d80808;
+}
+#hero .btn-active:hover{
+	background-color: #000;
+}
+#info h3{
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	color: #222;
+	margin-bottom: 30px;
+}
+#info p{
+	color: #444;
+	line-height: 30px;
+	text-align: center;
+}
+#info{
+	padding: 120px;
+} #columnas{
+	padding-top: 40px;
+	text-align: center;
+}
+.titulo{
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #2d2d2d;
+	font-weight: 300;
+}
+.titulo::after{
+	content: '';
+	border: 2px solid #2d2d2d;
+	display: block;
+	width: 50px;
+	margin: 30px auto;
+	
+}
+.subtitulo{
+	font-size: 24px;
+	color: #444;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.bg-gris{
+	background-color: #f2f2f2;
+	padding: 5% 5% !important;
+}
+.bg-gris2{
+	padding: 5% 5% !important;
+}
+.btn-negro{
+	background-color: transparent;
+	border: 1px solid #000;
+	padding: 10px 20px;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+.btn-negro:hover{
+	background-color: #D80800;
+	color: #fff;
+	border-color: #D80808
+}
+#about .titulo,
+#about2 .titulo{
+	text-align: left;
+	margin-bottom: 20px;
+}
+#about .titulo::after,
+#about2 .titulo::after{
+	display: none;
+}
+#projects{
+	background-color: #f2f2f2;
+	padding: 4% 0;
+	text-align: center;
+}
+.project{
+	position: relative;
+	overflow: hidden;
+}
+.project-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	/**text-align: center;**/
+	display: grid;
+	align-content: center;
+	color: #fff;
+	background-color: rgba(223,0,3,0.70);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.project-info h4{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.project:hover .project-info{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.project:hover img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-in-out;
+}
+.project img{
+	transition: all 0.3s ease-in-out;
+}
